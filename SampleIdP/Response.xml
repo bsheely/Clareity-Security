@@ -1,0 +1,34 @@
+<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" Destination="http://74.239.29.212/SampleSP/AssertCustServ.aspx" ID="002" InResponseTo="001" IssueInstant="2008-01-12T00:24:44Z" Version="2.0"><saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">SampleIdP Issuer</saml:Issuer><samlp:Status><samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/></samlp:Status><saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="002" IssueInstant="2008-01-12T00:24:44Z" Version="2.0"><saml:Issuer>SampleIdP Issuer</saml:Issuer><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="#002">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+<ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="ds http://www.w3.org/2000/09/xmldsig#enveloped-signature http://www.w3.org/2001/10/xml-exc-c14n# saml"/>
+</ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>pgADrh7dHnDFHzmmTPi0mE89C6M=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>Fq4R+IXscbSgsSm+xiAgxVopnyqEceUffFaINiKwxwQcksiSRs1Q18beZrXq7Zyv
+JHKldifta9evLlG8ngSYKmOI5Zp3eD9o60OiXsRGCzrhKj1OTx4MoA8tuy1tbxhc
+oPJUOKF5DRMIPdlyIUWQ2j1NoJLe76GlBKXTTaD2j4o=</ds:SignatureValue>
+<ds:KeyInfo><ds:KeyName>local.acmeidp.com</ds:KeyName><ds:X509Data><ds:X509Certificate>MIICvTCCAiYCCQCjGd2j7u1VDjANBgkqhkiG9w0BAQUFADCBojELMAkGA1UEBhMC
+VVMxEjAQBgNVBAgTCVRlbm5lc3NlZTESMBAGA1UEBxMJS25veHZpbGxlMREwDwYD
+VQQKEwhBQ01FIElkUDERMA8GA1UECxMIU2VjdXJpdHkxGjAYBgNVBAMTEWxvY2Fs
+LmFjbWVpZHAuY29tMSkwJwYJKoZIhvcNAQkBFhpzZWN1cml0eUBsb2NhbC5hY21l
+aWRwLmNvbTAeFw0wNzA4MDQyMjA0MDlaFw0wODA4MDMyMjA0MDlaMIGiMQswCQYD
+VQQGEwJVUzESMBAGA1UECBMJVGVubmVzc2VlMRIwEAYDVQQHEwlLbm94dmlsbGUx
+ETAPBgNVBAoTCEFDTUUgSWRQMREwDwYDVQQLEwhTZWN1cml0eTEaMBgGA1UEAxMR
+bG9jYWwuYWNtZWlkcC5jb20xKTAnBgkqhkiG9w0BCQEWGnNlY3VyaXR5QGxvY2Fs
+LmFjbWVpZHAuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCeTzi9Jh6W
+pIqi4lQC1pNW4U54ZEYRZmx1vOMZrysh4ql1qCi4n5O8SUJaVVHw5zl+B3G/5cVV
+7fS+Nn6+vCM2KwmJ0Uv6UQc5T24q6EObOCyMBrlJYlx4DIMsAXxWf5ZDBMPQOH9U
+zrM5IqEJDTrD/XbiTbdnOypzOumP1C2jDwIDAQABMA0GCSqGSIb3DQEBBQUAA4GB
+AAtJFS7EsFZLL6Jsq9VclzZOTakBvvJe31J6ayjktI6QFulpBgp0wo448b2QHJG5
+Bn9BxlWk5q5Td2ekgRw9kDKKfe0Rs30e1Ptzdiij2us/cELbQcSJB2Q5lYkp/uG3
+lYkJbP/Vnk+8IQe9/4QVEND2MzpqlJgBmzxO0p+2XB2M
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature><saml:Subject><saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">joe</saml:NameID><saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"><saml:SubjectConfirmationData InResponseTo="001" NotOnOrAfter="2008-01-12T00:29:44Z" Recipient="http://74.239.29.212/SampleSP/AssertCustServ.aspx"/></saml:SubjectConfirmation></saml:Subject><saml:Conditions NotBefore="2008-01-12T00:23:44Z" NotOnOrAfter="2008-01-12T00:29:44Z"/><saml:AuthnStatement AuthnInstant="2008-01-12T00:24:44Z"><saml:AuthnContext><saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml:AuthnContextClassRef></saml:AuthnContext></saml:AuthnStatement></saml:Assertion></samlp:Response>

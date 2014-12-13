@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor
+    xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+    entityID="http://local.acmeidp.com">
+    <md:IDPSSODescriptor
+        WantAuthnRequestsSigned="false"
+        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+       <md:KeyDescriptor use="signing">
+           <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+               <ds:X509Data>
+                   <ds:X509Certificate>
+MIICpTCCAg4CCQCTldYPmn9jAzANBgkqhkiG9w0BAQUFADCBljELMAkGA1UEBhMC
+VVMxEjAQBgNVBAgTCVRlbm5lc3NlZTESMBAGA1UEBxMJS25veHZpbGxlMREwDwYD
+VQQKEwhBY21lIElkcDERMA8GA1UECxMIU2VjdXJpdHkxGDAWBgNVBAMTD2lkcC5h
+Y21laWRwLmNvbTEfMB0GCSqGSIb3DQEJARYQcGF1bEBhY21lbWxzLmNvbTAeFw0w
+NzA4MDUyMDA2MDJaFw0wODA4MDQyMDA2MDJaMIGWMQswCQYDVQQGEwJVUzESMBAG
+A1UECBMJVGVubmVzc2VlMRIwEAYDVQQHEwlLbm94dmlsbGUxETAPBgNVBAoTCEFj
+bWUgSWRwMREwDwYDVQQLEwhTZWN1cml0eTEYMBYGA1UEAxMPaWRwLmFjbWVpZHAu
+Y29tMR8wHQYJKoZIhvcNAQkBFhBwYXVsQGFjbWVtbHMuY29tMIGfMA0GCSqGSIb3
+DQEBAQUAA4GNADCBiQKBgQC5jlYVO08ZPlXY3GVfz2l6wajkNaFhVdWSBmZWxVCr
+kmOnq6zOi4Az8oVRT9yBrV3e7P+K7FSjqn2vBOSESsSFxWSM98FwZxUDQqqNAntj
+T54PvhFEFAb/JTKRicQhc6X0cW7zRdX/+pwhWWBlYwPqHccINT5c2F7al07Ey9Nz
+wwIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAHRvAMqhQuZMvskYqaogp4kWNFXVKhTE
+XYrWZBEyM0DMC6N0rmsVh+maYELE/I1iT77xsRmLPURdxoePfAWmJ0I5162SDbdQ
+VvFb7/BVl9hiOT4RDo9jd6Kju6vWSSunu+lG/7uQB9aeDQl8tjw8dz5W930F2I7Z
+aIYEDFulvnvQ
+        </ds:X509Certificate>
+    </ds:X509Data></ds:KeyInfo>
+</md:KeyDescriptor>
+        <md:NameIDFormat>
+            urn:oasis:names:tc:SAML:2.0:nameid-format:persistent
+        </md:NameIDFormat>
+        <md:NameIDFormat>
+            urn:oasis:names:tc:SAML:2.0:nameid-format:transient
+        </md:NameIDFormat>
+        <md:SingleSignOnService
+            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+            Location="http://www.acmeidp.com:80/recv-authnrequest.jsp"/>
+    </md:IDPSSODescriptor>
+</md:EntityDescriptor>
